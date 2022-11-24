@@ -16,7 +16,6 @@ import {
 dotenv.config()
 const DISCORD_TOKEN = process.env.DISCORD_TOKEN
 const CLIENT_ID = process.env.CLIENT_ID
-const GUILD_ID = process.env.GUILD_ID
 const commands = [
     new SlashCommandBuilder()
         .setName('mark')
@@ -72,8 +71,8 @@ client.on('interactionCreate', async interaction => {
                     title: `Player Marked`,
                     url: `https://www.roblox.com/users/${target_ID}/profile`,
                     description: `> Created a Bookmarklet for **Player ${target_ID}**
-                    > The bookmarklet lets you quick join whoever you marked
-                    > as long as they have their joins on.`,
+                    > The bookmarklet lets you quick join whoever
+                    >  you marked as long as they have their joins on.`,
                     thumbnail: {
                         url: 'https://cdn.discordapp.com/attachments/342709986415214602/1045254550912778250/Screenshot_196.png',
                     },
