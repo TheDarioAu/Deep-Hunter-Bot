@@ -72,7 +72,7 @@ client.on('interactionCreate', async interaction => {
                     url: `https://www.roblox.com/users/${target_ID}/profile`,
                     description: `> Created a Bookmarklet for **Player ${target_ID}**
                     > The bookmarklet lets you quick join whoever
-                    >  you marked as long as they have their joins on.`,
+                    > you marked as long as they have their joins on.`,
                     thumbnail: {
                         url: 'https://cdn.discordapp.com/attachments/342709986415214602/1045254550912778250/Screenshot_196.png',
                     },
